@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Projects from "../../projects.json";
 import { Context } from "../../context/Context";
+import dot from "../../assets/imgs/dot.svg";
+import dot1 from "../../assets/imgs/Ellipse.svg";
+import { projects } from "../Cards/Cards";
 import "./ProjectCard.css";
 
 const ProjectCard = () => {
@@ -9,7 +11,7 @@ const ProjectCard = () => {
   const [fullScreen, setFullScreen] = useState(false);
   const [myProject, setMyProject] = useState({});
   const params = useParams();
-  const currentProject = Projects.find((project) => project.id == params.id);
+  const currentProject = projects.find((project) => project.id == params.id);
 
   useEffect(() => {
     setMyProject(currentProject);
@@ -18,14 +20,7 @@ const ProjectCard = () => {
   return (
     <div className="container">
       <div className="projectCard">
-        <img
-          src={
-            theme === "light"
-              ? "./assets/imgs/dot.svg"
-              : "./assets/imgs/Ellipse.svg"
-          }
-          alt="ellipse"
-        />
+        <img src={theme === "light" ? dot : dot1} alt="ellipse" />
         <div className="projectImg">
           <div>
             <button onClick={() => setFullScreen(true)}>

@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "./../../context/Context";
+import squares from "../../assets/imgs/educationSquares.svg";
+import border1 from "../../assets/imgs/borderImg1.png";
+import border from "../../assets/imgs/borderImg.png";
 import "./Education.css";
 
 const Education = () => {
@@ -24,8 +27,8 @@ const Education = () => {
 
   return (
     <section id="education" className="mt">
-      <img src="./assets/imgs/educationSquares.svg" alt="squares" />
-      <img src="./assets/imgs/educationSquares.svg" alt="squares" />
+      <img src={squares} alt="squares" />
+      <img src={squares} alt="squares" />
 
       <div className="container">
         <div className="education">
@@ -34,14 +37,7 @@ const Education = () => {
           <div>
             {experience.map((work, idx) => (
               <div key={idx} className="experience">
-                <img
-                  src={
-                    theme === "dark"
-                      ? "./assets/imgs/borderImg1.png"
-                      : "./assets/imgs/borderImg.png"
-                  }
-                  alt="border"
-                />
+                <img src={theme === "dark" ? border1 : border} alt="border" />
                 <div>
                   <h3>{work.title}</h3>
                   <p>

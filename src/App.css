@@ -12,7 +12,7 @@
   --btn-bg-: rgba(255, 255, 255, 0.6);
   --gradiant-: 1;
   --hero-content-: #43495b;
-  --contact-bg-: url(/public/assets/imgs/contactBng.svg);
+  --contact-bg-: url(./assets/imgs/contactBng.svg);
   --hover-: #0988cc;
   --card-bg-: rgba(245, 245, 245, 0.3);
 }
@@ -24,7 +24,7 @@
   --btn-bg-: #7de0ea;
   --gradiant-: 0.4;
   --hero-content-: #ffffff;
-  --contact-bg-: url(/public/assets/imgs/contactBg1.svg);
+  --contact-bg-: url(./assets/imgs/contactBg1.svg);
   --hover-: #68c3cd;
   --card-bg-: transparent;
 }

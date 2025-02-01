@@ -1,10 +1,13 @@
 import React from "react";
+import myImg from "../../assets/imgs/myImg.png";
+import squares from "../../assets/imgs/squares.svg";
+import gradiant from '../../assets/imgs/BlurGradient.png'
 import "./Hero.css";
 
 const Hero = () => {
   return (
     <section id="home">
-      <img src="./assets/imgs/BlurGradient.png" alt="gradient" />
+      <img src={gradiant} alt="gradient" />
       <div className="container">
         <div className="hero">
           <div className="content">
@@ -19,8 +22,8 @@ const Hero = () => {
             <a href="./assets/pdfs/MohamadTahaKasirResume.pdf">Download Cv</a>
           </div>
           <div>
-            <img src="./assets/imgs/myImg.png" alt="personal image" />
-            <img src="./assets/imgs/squares.svg" alt="squares" />
+            <img src={myImg} alt="personal image" />
+            <img src={squares} alt="squares" />
           </div>
         </div>
       </div>

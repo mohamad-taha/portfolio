@@ -1,4 +1,6 @@
 import React, { useContext, useState } from "react";
+import sun from "../../assets/imgs/Sun.svg";
+import moon from "../../assets/imgs/moon.svg";
 import { Context } from "../../context/Context";
 
 const modeBtn = () => {
@@ -18,9 +20,7 @@ const modeBtn = () => {
       <img
         style={icn ? { transform: "scale(0)" } : { transform: "scale(1)" }}
         width={30}
-        src={
-          theme === "dark" ? "./assets/imgs/Sun.svg" : "./assets/imgs/moon.svg"
-        }
+        src={theme === "dark" ? sun : moon}
         alt="theme icon"
       />
     </button>

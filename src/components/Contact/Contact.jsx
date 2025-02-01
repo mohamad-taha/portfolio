@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../../context/Context";
+import email from "../../assets/imgs/mail.svg";
+import phone from "../../assets/imgs/phone.svg";
+import address from "../../assets/imgs/address.svg";
 import "./Contact.css";
 
 const Contact = () => {
@@ -28,7 +31,7 @@ const Contact = () => {
                 }
               >
                 <div>
-                  <img src="./assets/imgs/phone.svg" alt="phone" />
+                  <img src={phone} alt="phone" />
                 </div>
                 <div>
                   <p>Call me</p>
@@ -37,7 +40,7 @@ const Contact = () => {
               </div>
               <div>
                 <div>
-                  <img src="./assets/imgs/mail.svg" alt="mail" />
+                  <img src={email} alt="email" />
                 </div>
                 <div>
                   <p>Email me</p>
@@ -46,7 +49,7 @@ const Contact = () => {
               </div>
               <div>
                 <div>
-                  <img src="./assets/imgs/address.svg" alt="address" />
+                  <img src={address} alt="address" />
                 </div>
                 <div>
                   <p>Address</p>
