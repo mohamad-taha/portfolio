@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import Cards from "../Cards/Cards";
-import Projects from "../../projects.json";
+import { projects } from "../Cards/Cards";
 import "./ProjectsSlider.css";
 
 const slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % Projects.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
   const handlePrev = () => {
     setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + Projects.length) % Projects.length
+      (prevIndex) => (prevIndex - 1 + Projects.length) % projects.length
     );
   };
 
