@@ -37,8 +37,8 @@ const Education = () => {
                 <img
                   src={
                     theme === "dark"
-                      ? "/assets/imgs/borderImg1.png"
-                      : "/assets/imgs/borderImg.png"
+                      ? "./assets/imgs/borderImg1.png"
+                      : "./assets/imgs/borderImg.png"
                   }
                   alt="border"
                 />

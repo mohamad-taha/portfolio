@@ -19,7 +19,7 @@ const modeBtn = () => {
         style={icn ? { transform: "scale(0)" } : { transform: "scale(1)" }}
         width={30}
         src={
-          theme === "dark" ? "/assets/imgs/Sun.svg" : "/assets/imgs/moon.svg"
+          theme === "dark" ? "./assets/imgs/Sun.svg" : "./assets/imgs/moon.svg"
         }
         alt="theme icon"
       />

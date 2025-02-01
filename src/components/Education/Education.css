@@ -88,9 +88,10 @@
 .education > div:last-child {
   background-image: var(--contact-bg-);
   background-position: center;
-  height: 410px;
+  height: 400px;
+  background-repeat: no-repeat;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   margin-top: 165px;
   display: flex;
   align-items: center;
@@ -149,6 +150,7 @@
     height: max-content;
     text-align: center;
     background-position: center;
+    background-size: cover;
   }
 
   .education > div:last-child p {

@@ -21,8 +21,8 @@ const ProjectCard = () => {
         <img
           src={
             theme === "light"
-              ? "/assets/imgs/dot.svg"
-              : "/assets/imgs/Ellipse.svg"
+              ? "./assets/imgs/dot.svg"
+              : "./assets/imgs/Ellipse.svg"
           }
           alt="ellipse"
         />
