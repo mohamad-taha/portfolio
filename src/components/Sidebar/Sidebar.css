@@ -1,0 +1,40 @@
+.sidebar {
+  transition: 200ms;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-color-);
+  color: var(--text-);
+  padding: 50px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  ul li a {
+    transition: 200ms;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-);
+    transition: 200ms;
+  }
+
+  ul li a:hover {
+    color: var(--active-);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.27);
+}

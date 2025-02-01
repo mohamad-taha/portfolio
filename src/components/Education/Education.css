@@ -1,0 +1,162 @@
+#education {
+  position: relative;
+}
+
+#education > img {
+  position: absolute;
+}
+
+#education > img:first-child {
+  left: 0;
+  bottom: 36%;
+}
+
+#education > img:nth-child(2) {
+  transform: rotate(180deg);
+  right: 0;
+}
+#education button {
+  transition: 200ms;
+  background-color: var(--active-);
+  position: fixed;
+  border: none;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  z-index: 20;
+}
+
+#education button:hover {
+  background-color: var(--hover-);
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education > p {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--active-);
+}
+
+.education h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-);
+}
+
+.education > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education .experience {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  width: 45%;
+  margin-top: 90px;
+}
+
+.education .experience img {
+  width: 23px;
+  object-fit: contain;
+}
+
+.education .experience h3 {
+  color: var(--text-);
+  font-size: 25px;
+  font-weight: 500;
+  width: max-content;
+}
+
+.education .experience p {
+  color: #98a2b3;
+  text-align: justify;
+}
+.education .experience span {
+  color: var(--text-);
+}
+
+.education > div:last-child {
+  background-image: var(--contact-bg-);
+  background-position: center;
+  height: 410px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.education > div:last-child h3 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.education > div:last-child p {
+  font-size: 20px;
+  width: 589px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1023px) {
+  #education > img {
+    display: none;
+  }
+
+  .education > div {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .education h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .education .experience {
+    width: 100%;
+
+    img {
+      display: none;
+    }
+
+    h3 {
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .education > div:last-child {
+    margin-top: 100px;
+    padding: 20px 0;
+    height: max-content;
+    text-align: center;
+    background-position: center;
+  }
+
+  .education > div:last-child p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .education > div:last-child h3 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,49 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.projects .header {
+  display: flex;
+  flex-direction: column;
+
+  > span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--active-);
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 400px;
+    color: var(--text-);
+
+    span {
+      color: var(--active-);
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .projects .header {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      width: 100%;
+    }
+
+    div {
+      flex-direction: column;
+    }
+  }
+}

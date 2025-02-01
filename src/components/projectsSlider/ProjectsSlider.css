@@ -1,0 +1,75 @@
+.slider .sliderHeader {
+  margin-bottom: 50px;
+
+  > span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--active-);
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 54px;
+    color: var(--text-);
+
+    span {
+      color: var(--active-);
+    }
+  }
+
+  button {
+    transition: 200ms;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--active-);
+    background-color: transparent;
+  }
+
+  button:hover {
+    background-color: var(--active-);
+  }
+}
+
+.slider {
+  overflow-x: hidden;
+
+  .cardsContainer {
+    width: max-content;
+
+    .card {
+      transition: 200ms;
+      width: 380px;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .sliderHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slider {
+    .sliderHeader p {
+      font-size: 28px;
+    }
+
+    .cardsContainer {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .sliderHeader button {
+    display: none;
+  }
+}
