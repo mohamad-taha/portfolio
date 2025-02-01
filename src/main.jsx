@@ -7,7 +7,7 @@ import { ContextProvider } from "./context/Context.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ContextProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio/">
         <App />
       </BrowserRouter>
     </ContextProvider>
