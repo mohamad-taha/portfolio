@@ -1,7 +1,7 @@
 import React from "react";
-import myImg from "../../assets/imgs/myImg.png";
+import myImg from "../../assets/imgs/myImg.webp";
 import squares from "../../assets/imgs/squares.svg";
-import gradiant from "../../assets/imgs/BlurGradient.png";
+import gradiant from "../../assets/imgs/BlurGradient.webp";
 import "./Hero.css";
 
 const Hero = () => {

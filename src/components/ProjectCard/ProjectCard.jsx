@@ -5,6 +5,7 @@ import dot from "../../assets/imgs/dot.svg";
 import dot1 from "../../assets/imgs/Ellipse.svg";
 import { projects } from "../Cards/Cards";
 import "./ProjectCard.css";
+import { Helmet } from "react-helmet-async";
 
 const ProjectCard = () => {
   const { theme } = useContext(Context);
@@ -19,6 +20,9 @@ const ProjectCard = () => {
 
   return (
     <div className="container">
+      <Helmet>
+        <title>project | {params.name}</title>
+      </Helmet>
       <div className="projectCard">
         <img src={theme === "light" ? dot : dot1} alt="ellipse" />
         <div className="projectImg">

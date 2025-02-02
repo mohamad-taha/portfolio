@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import projectpng1 from "../../assets/imgs/project1.png";
+import projectpng1 from "../../assets/imgs/project1.webp";
 import projectpng2 from "../../assets/imgs/project2.png";
 import projectpng3 from "../../assets/imgs/project3.png";
-import projectpng4 from "../../assets/imgs/project4.png";
+import projectpng4 from "../../assets/imgs/project4.webp";
 import projectpng5 from "../../assets/imgs/project5.png";
 import projectpng6 from "../../assets/imgs/project6.png";
 import "./Cards.css";

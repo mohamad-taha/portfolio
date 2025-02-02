@@ -3,6 +3,7 @@ import Cards from "../Cards/Cards";
 import { projects } from "../Cards/Cards";
 import "./ProjectsSlider.css";
 
+
 const slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -12,12 +13,13 @@ const slider = () => {
 
   const handlePrev = () => {
     setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + Projects.length) % projects.length
+      (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
     );
   };
 
   return (
     <div className="mt container">
+      
       <div className="slider">
         <div className="sliderHeader">
           <span>Portfolio</span>

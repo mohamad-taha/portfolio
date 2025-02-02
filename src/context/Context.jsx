@@ -18,8 +18,8 @@ export const ContextProvider = ({ children }) => {
       value={{
         showSidebar,
         setShowSidebar,
-        setTheme,
         theme,
+        setTheme,
         activeSection,
         setActiveSection,
       }}

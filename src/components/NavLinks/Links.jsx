@@ -9,7 +9,7 @@ const Links = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
-    if (sections.length === 0) return; //  هي مشان تجنب الأخطاء وقت تحميل الصفحة بدون أقسام
+    if (sections.length === 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
