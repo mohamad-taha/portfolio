@@ -1,7 +1,7 @@
 import React from "react";
 import myImg from "../../assets/imgs/myImg.png";
 import squares from "../../assets/imgs/squares.svg";
-import gradiant from '../../assets/imgs/BlurGradient.png'
+import gradiant from "../../assets/imgs/BlurGradient.png";
 import "./Hero.css";
 
 const Hero = () => {
@@ -19,7 +19,12 @@ const Hero = () => {
               Hi there! I'm Frontend Developer specializing in crafting seamless
               user experiences and dynamic interfaces using modern web tools
             </p>
-            <a href="./assets/pdfs/MohamadTahaKasirResume.pdf">Download Cv</a>
+            <a
+              href="pdfs/MohamadTahaKasirResume.pdf"
+              download="MohamadTahaKasir.pdf"
+            >
+              Download Cv
+            </a>
           </div>
           <div>
             <img src={myImg} alt="personal image" />

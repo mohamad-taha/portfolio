@@ -1,11 +1,15 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../../context/Context";
+import { useLocation } from "react-router-dom";
 
 const Links = () => {
   const { activeSection, setActiveSection } = useContext(Context);
+  const location = useLocation();
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
+
+    if (sections.length === 0) return; //  هي مشان تجنب الأخطاء وقت تحميل الصفحة بدون أقسام
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -16,7 +20,7 @@ const Links = () => {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.2,
         rootMargin: "0px",
       }
     );
@@ -27,7 +31,7 @@ const Links = () => {
       sections.forEach((section) => observer.unobserve(section));
       observer.disconnect();
     };
-  }, [activeSection]);
+  }, [location.pathname]);
 
   const links = [
     { id: "home", text: "Home" },
@@ -42,8 +46,8 @@ const Links = () => {
       {links.map((link) => (
         <li key={link.id}>
           <a
-            href={`#${link.id}`}
             className={activeSection === link.id ? "active" : ""}
+            href={`#${link.id}`}
           >
             {link.text}
           </a>
