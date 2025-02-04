@@ -7,7 +7,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <section id="home">
-      <img loading="lazy" src={gradiant} alt="gradient" />
+      <img src={gradiant} alt="gradient" />
       <div className="container">
         <div className="hero">
           <div className="content">
@@ -27,7 +27,7 @@ const Hero = () => {
             </a>
           </div>
           <div>
-            <img loading="lazy" src={myImg} alt="personal image" />
+            <img src={myImg} alt="personal image" />
             <img src={squares} alt="squares" />
           </div>
         </div>

@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/fonts/Poppins.ttf") format("truetype");
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
+  font-family: "MyCustomFont";
 }
 
 [data-theme="light"] {
