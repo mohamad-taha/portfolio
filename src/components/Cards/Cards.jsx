@@ -95,7 +95,10 @@ const Cards = ({ style }) => {
           <p>{project.title}</p>
           <div>
             <span>{project.libraries.join("-")}</span>
-            <Link to={`/project/${project.id}/${project.title}`}>
+            <Link
+              aria-label="go to project details"
+              to={`/project/${project.id}/${project.title}`}
+            >
               <svg
                 width="35"
                 height="35"

@@ -39,7 +39,7 @@ const Education = () => {
               <div key={idx} className="experience">
                 <img src={theme === "dark" ? border1 : border} alt="border" />
                 <div>
-                  <h3>{work.title}</h3>
+                  <h2>{work.title}</h2>
                   <p>
                     <span>{work.company}</span>
                     {work.desc}
@@ -76,6 +76,7 @@ const Education = () => {
         </div>
       </div>
       <button
+        aria-label="go to top"
         style={{
           transform:
             activeSection > "aboutMe" && activeSection !== "home"

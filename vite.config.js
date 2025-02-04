@@ -5,4 +5,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/portfolio/",
+  esbuild: {
+    drop: ["console", "debugger"],
+    minify: true,
+  },
+  build: {
+    minify: "esbuild",
+    cssCodeSplit: true,
+  },
 });

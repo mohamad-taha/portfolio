@@ -27,7 +27,7 @@ const ProjectCard = () => {
         <img src={theme === "light" ? dot : dot1} alt="ellipse" />
         <div className="projectImg">
           <div>
-            <button onClick={() => setFullScreen(true)}>
+            <button aria-label="show image" onClick={() => setFullScreen(true)}>
               <svg
                 width="80"
                 height="80"

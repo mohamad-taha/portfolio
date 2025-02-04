@@ -81,7 +81,7 @@ const Contact = () => {
                 id="message"
                 placeholder="Message"
               ></textarea>
-              <button type="submit" className="primaryBtn">
+              <button aria-label="send message" type="submit" className="primaryBtn">
                 Send Message
               </button>
             </form>

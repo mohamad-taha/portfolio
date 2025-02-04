@@ -13,7 +13,11 @@ const Navbar = () => {
       <Link to={"/"}>Mohamad Taha Kasir</Link>
       <Links />
       <ModeBtn />
-      <button className="menuBtn" onClick={() => setShowSidebar(!showSidebar)}>
+      <button
+        aria-label="menu button"
+        className="menuBtn"
+        onClick={() => setShowSidebar(!showSidebar)}
+      >
         <svg
           width="35"
           height="35"

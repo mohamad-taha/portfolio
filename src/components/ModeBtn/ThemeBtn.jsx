@@ -16,7 +16,11 @@ const modeBtn = () => {
   };
 
   return (
-    <button className="modeBtn" onClick={handleChangeTheme}>
+    <button
+      aria-label="change theme"
+      className="modeBtn"
+      onClick={handleChangeTheme}
+    >
       <img
         style={icn ? { transform: "scale(0)" } : { transform: "scale(1)" }}
         width={30}

@@ -8,7 +8,10 @@ const Footer = () => {
         <p>@ 2025. All Rights Reserved</p>
         <p>Develpoment by Mohamad Taha kasir</p>
         <div>
-          <a href="https://www.linkedin.com/in/mohamdtahakasir/">
+          <a
+            aria-label="taha's linkedin"
+            href="https://www.linkedin.com/in/mohamdtahakasir/"
+          >
             <svg
               width="14"
               height="13"
@@ -30,7 +33,11 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a target="_blank" href="https://github.com/mohamad-taha">
+          <a
+            aria-label="taha's github"
+            target="_blank"
+            href="https://github.com/mohamad-taha"
+          >
             <svg
               height="24"
               viewBox="0 0 24 24"

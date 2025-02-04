@@ -70,7 +70,7 @@
   object-fit: contain;
 }
 
-.education .experience h3 {
+.education .experience h2 {
   color: var(--text-);
   font-size: 25px;
   font-weight: 500;

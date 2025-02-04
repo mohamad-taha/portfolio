@@ -3,7 +3,6 @@ import Cards from "../Cards/Cards";
 import { projects } from "../Cards/Cards";
 import "./ProjectsSlider.css";
 
-
 const slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -19,7 +18,6 @@ const slider = () => {
 
   return (
     <div className="mt container">
-      
       <div className="slider">
         <div className="sliderHeader">
           <span>Portfolio</span>
@@ -28,7 +26,7 @@ const slider = () => {
               The Best <span>Projects</span>
             </p>
             <div>
-              <button onClick={handlePrev}>
+              <button aria-label="prev card" onClick={handlePrev}>
                 <svg
                   width="6"
                   height="11"
@@ -44,7 +42,7 @@ const slider = () => {
                   />
                 </svg>
               </button>
-              <button onClick={handleNext}>
+              <button aria-label="next card" onClick={handleNext}>
                 <svg
                   width="7"
                   height="11"

@@ -6,7 +6,9 @@ const ProgressBar = ({ skill }) => {
 
   return (
     <div className="skill">
-      <span className="skillName">{skill.name}</span>
+      <label htmlFor={skill.name} className="skillName">
+        {skill.name}
+      </label>
       <div className="sliderContainer">
         <input
           style={{
