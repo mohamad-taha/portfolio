@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import SkillBars from "../SkillBars/SkillBars";
 import { Context } from "../../context/Context";
 import dot from "../../assets/imgs/dot.svg";
 import dot1 from "../../assets/imgs/Ellipse.svg";
-import skills from "../../assets/imgs/skills.svg";
+import Skills from "../Skills/Skills";
 import "./About.css";
 
 const About = () => {
@@ -13,7 +12,7 @@ const About = () => {
       <img src={theme === "light" ? dot : dot1} alt="ellipse" />
       <div className="container">
         <div className="aboutMe mt">
-          <img src={skills} alt="skills image" />
+          <Skills />
           <div className="content">
             <div>
               <h1>About Me</h1>
@@ -26,7 +25,6 @@ const About = () => {
                 and attractive web applications.
               </p>
             </div>
-            <SkillBars />
           </div>
         </div>
       </div>
