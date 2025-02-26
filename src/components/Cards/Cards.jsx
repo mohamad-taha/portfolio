@@ -6,6 +6,7 @@ import projectpng3 from "../../assets/imgs/project3.png";
 import projectpng4 from "../../assets/imgs/project4.webp";
 import projectpng5 from "../../assets/imgs/project5.png";
 import projectpng6 from "../../assets/imgs/project6.png";
+import projectpng7 from "../../assets/imgs/project7.png";
 import "./Cards.css";
 
 export const projects = [
@@ -81,6 +82,17 @@ export const projects = [
     languages: ["HTML", "CSS", "Javascript"],
     description:
       "A web-based task management application that enables users to create, read, update, and delete (CRUD) todo lists, allowing for efficient organization and prioritization of tasks.",
+  },
+  {
+    id: 7,
+    link: "https://mohamad-taha.github.io/elcinema/",
+    repo: "https://github.com/mohamad-taha/elcinema",
+    img: projectpng7,
+    title: "Elcinema",
+    libraries: ["React", "React Router", "MUI"],
+    languages: ["HTML", "CSS", "Javascript"],
+    description:
+      "This is a web application that allows users to explore a vast collection of movies and TV shows powered by the TMDB API. The platform provides detailed information about each title, including descriptions, ratings, genres, and trailers. Users can browse trending titles, filter content by genre, and discover new favorites.",
   },
 ];
 
