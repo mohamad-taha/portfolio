@@ -1,0 +1,19 @@
+.menuBtn {
+  background-color: transparent;
+
+  border: none;
+
+  transition: all 300ms;
+
+  display: flex;
+}
+
+.menuBtn svg {
+  fill: var(--white-color);
+}
+
+@media (min-width: 1024px) {
+  .menuBtn {
+    display: none;
+  }
+}

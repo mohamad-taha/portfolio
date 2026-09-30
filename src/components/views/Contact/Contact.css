@@ -1,0 +1,196 @@
+.contact {
+  margin-top: 100px !important;
+}
+
+.contactContent {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  gap: 40px;
+
+  max-width: 1100px;
+
+  margin: 50px auto;
+
+  padding: 20px;
+}
+
+.infoBoxes {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  flex: 1;
+
+  width: 100%;
+}
+
+.infoBox {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 20px;
+
+  background-color: #111116;
+
+  border: 1px solid #222230;
+
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.infoBox:hover {
+  transform: translateX(-5px);
+
+  border-color: var(--primary-color);
+}
+
+.infoBox .icon {
+  font-size: 24px;
+
+  background-color: #181824;
+
+  padding: 12px;
+
+  border-radius: 50%;
+
+  border: 1px solid #2d2d44;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 50px;
+
+  height: 50px;
+}
+
+.infoBox h3 {
+  margin: 0 0 5px 0;
+
+  color: var(--primary-color);
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.infoBox p {
+  margin: 0;
+
+  color: var(--white-color);
+
+  font-size: 14px;
+}
+
+.contactForm {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  flex: 1;
+
+  width: 100%;
+
+  padding: 30px;
+
+  background-color: #111116;
+
+  border-radius: 12px;
+
+  border: 1px solid #222230;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contactForm .primaryBtn:disabled {
+  color: #64748b;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  background-color: #181824;
+
+  border: 1px solid #2d2d44;
+
+  border-radius: 8px;
+
+  color: var(--white-color);
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.contactForm textarea {
+  min-height: 140px;
+
+  resize: none;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: var(--primary-color);
+
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: #64748b;
+}
+
+.statusNote {
+  margin-top: 10px;
+
+  font-size: 14px;
+
+  color: var(--primary-color);
+
+  text-align: center;
+
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .contactContent {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .infoBox {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .infoBox:hover {
+    transform: translateY(-3px);
+  }
+}

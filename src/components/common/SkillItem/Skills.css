@@ -1,0 +1,38 @@
+.skillsContainer {
+  margin-top: 50px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+
+  justify-content: space-evenly;
+}
+
+.skillsContainer img {
+  width: 80px;
+
+  height: 80px;
+
+  object-fit: contain;
+
+  animation: pulse 3s linear infinite;
+}
+
+@media (min-width: 1023px) {
+  .skillsContainer {
+    width: 40%;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+}

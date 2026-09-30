@@ -1,0 +1,183 @@
+.footerContainer {
+  margin-top: 100px !important;
+
+  background-color: #070708;
+
+  color: var(--white-color);
+
+  padding: 60px 0 20px 0;
+
+  font-family: "Inter", sans-serif;
+
+  border-top: 1px solid #14141a;
+}
+
+.footerContainer ul {
+  margin-top: 20px;
+}
+
+.footerContent {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 40px;
+}
+
+.footerColumn {
+  flex: 1;
+}
+
+.footerContent .footerColumn:nth-child(2) ul {
+  list-style: none;
+
+  li{
+    margin-bottom: 12px;
+  }
+}
+
+.brandCol {
+  flex: 1.5;
+}
+
+.footerColumn h3 {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: var(--white-color);
+
+  letter-spacing: 0.5px;
+}
+
+.socialIcons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 10px;
+
+  font-size: 20px;
+}
+
+.socialIcons a svg {
+  transition: 0.3s ease;
+}
+
+.socialIcons a svg:hover {
+  fill: var(--primary-color);
+}
+
+.footerLinks {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 12px;
+}
+
+.footerLinks a {
+  color: #64748b;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: color 0.2s ease;
+}
+
+.footerLinks a:hover {
+  color: var(--white-color);
+}
+
+.contactInfoList {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.contactInfoList li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.contactIcon {
+  font-size: 14px;
+
+  opacity: 0.7;
+}
+
+.contactText {
+  line-height: 1.4;
+}
+
+.footerBottom {
+  max-width: 1200px;
+
+  margin: 40px auto 0 auto;
+
+  padding: 20px 20px 0 20px;
+
+  border-top: 1px solid #14141a;
+
+  text-align: center;
+}
+
+.footerBottom p {
+  color: #475569;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footerContent {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 30px;
+  }
+
+  .brandCol {
+    margin-bottom: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .contactInfoList {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+}

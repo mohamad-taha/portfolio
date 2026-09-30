@@ -1,0 +1,19 @@
+.projects {
+  margin-top: 100px !important;
+}
+
+.cardsContainer {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+@media (max-width: 1023px) {
+  .cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

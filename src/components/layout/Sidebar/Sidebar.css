@@ -1,0 +1,47 @@
+.sidebar {
+  padding: 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100vh;
+
+  width: 300px;
+
+  position: fixed;
+
+  gap: 70px;
+
+  top: 0;
+
+  left: 0;
+
+  background-color: var(--secondary-bg-color);
+
+  z-index: 12;
+
+  backdrop-filter: blur(8px);
+
+  transition: transform 300ms;
+
+  box-shadow: 0 0 10px var(--secondary-bg-color);
+}
+
+.sidebar ul {
+  list-style: none;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+
+    box-shadow: none;
+  }
+}
