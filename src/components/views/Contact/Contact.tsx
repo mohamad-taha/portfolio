@@ -1,6 +1,10 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import { MdOutlineEmail } from "react-icons/md";
+import { FaMapLocation } from "react-icons/fa6";
+import { MdPhone } from "react-icons/md";
+
 import "./Contact.css";
 
 const Contact = () => {
@@ -52,7 +56,9 @@ const Contact = () => {
         <div className="contactContent">
           <div className="infoBoxes">
             <div className="infoBox">
-              <div className="icon">📞</div>
+              <div className="icon">
+                <MdPhone />
+              </div>
               <div>
                 <h3>Phone</h3>
                 <p>+963 935447842</p>
@@ -60,7 +66,9 @@ const Contact = () => {
             </div>
 
             <div className="infoBox">
-              <div className="icon">✉️</div>
+              <div className="icon">
+                <MdOutlineEmail />
+              </div>
               <div>
                 <h3>Email</h3>
                 <p>mohamadtahakasir@gmail.com</p>
@@ -68,7 +76,9 @@ const Contact = () => {
             </div>
 
             <div className="infoBox">
-              <div className="icon">📍</div>
+              <div className="icon">
+                <FaMapLocation />
+              </div>
               <div>
                 <h3>Address</h3>
                 <p>Aleppo, Syria</p>
