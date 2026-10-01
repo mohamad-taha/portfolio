@@ -1,0 +1,78 @@
+.certificateCard {
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgba(25, 75, 253, 0.08),
+    rgba(173, 19, 251, 0.03)
+  );
+  transition: 300ms ease;
+}
+
+.certificateCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(173, 19, 251, 0.4);
+  box-shadow: 0 15px 40px rgba(173, 19, 251, 0.08);
+}
+
+.certificateTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.certificateIcon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #194bfd, #ad13fb);
+}
+
+.certificateIcon svg {
+  font-size: 32px;
+
+  path {
+    color: var(--white-color);
+  }
+}
+
+.certificateBadge {
+  padding: 6px 11px;
+  border: 1px solid rgba(25, 75, 253, 0.3);
+  border-radius: 20px;
+  color: #aab7ff;
+  background: rgba(25, 75, 253, 0.08);
+  font-size: 12px;
+}
+
+.certificateContent {
+  margin-top: 25px;
+}
+
+.certificateContent h3 {
+  color: var(--white-color);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.certificateContent p {
+  margin-top: 8px;
+  color: var(--card-text-color);
+  font-size: 14px;
+}
+
+.certificateCard .outlineBtn {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .certificateCard {
+    width: 100%;
+  }
+}

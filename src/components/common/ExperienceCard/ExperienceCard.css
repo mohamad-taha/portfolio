@@ -125,3 +125,22 @@
 
   font-size: 15px;
 }
+
+.experienceProfile {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  color: #aab7ff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 300ms ease;
+}
+
+.experienceProfile:hover {
+  color: var(--white-color);
+}
+
+.experienceProfile svg {
+  font-size: 16px;
+}

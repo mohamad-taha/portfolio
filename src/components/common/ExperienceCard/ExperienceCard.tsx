@@ -1,3 +1,5 @@
+import { FiExternalLink } from "react-icons/fi";
+
 import type { IconType } from "react-icons";
 
 import "./ExperienceCard.css";
@@ -10,6 +12,7 @@ type ExperienceCardProps = {
   name: string;
   svg: IconType;
   degree: string;
+  profile?: string;
 };
 
 const ExperienceCard = ({
@@ -20,6 +23,7 @@ const ExperienceCard = ({
   name,
   svg: Svg,
   degree,
+  profile,
 }: ExperienceCardProps) => {
   return (
     <div className="experienceCard">
@@ -31,13 +35,11 @@ const ExperienceCard = ({
         <div className="experienceHeader">
           <div>
             <h3>{title}</h3>
-
             <p>{name}</p>
           </div>
 
           <span className="experienceDate">
             <Svg />
-
             {date}
           </span>
         </div>
@@ -45,6 +47,18 @@ const ExperienceCard = ({
         <span className="experienceDegree">{degree}</span>
 
         <p className="experienceDescription">{desc}</p>
+
+        {profile && (
+          <a
+            className="experienceProfile"
+            href={profile}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Profile
+            <FiExternalLink />
+          </a>
+        )}
       </div>
     </div>
   );

@@ -2,9 +2,23 @@
   margin-top: 100px !important;
 }
 
-.experience .ExperienceCardsbox{
+.experience .ExperienceCardsbox {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 50px;
+}
+
+.experience .ExperienceCardsbox:last-child {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .experience .ExperienceCardsbox:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
 }
