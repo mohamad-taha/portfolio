@@ -30,7 +30,7 @@ const MenuBtn = () => {
 
   return (
     <button onClick={toggleMenu} className="menuBtn">
-      {isOpen ? <IoMdClose fontSize={18} /> : <TiThMenu fontSize={18} />}
+      {isOpen ? <IoMdClose fontSize={22} /> : <TiThMenu fontSize={22} />}
     </button>
   );
 };

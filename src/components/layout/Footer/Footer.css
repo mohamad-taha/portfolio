@@ -39,7 +39,7 @@
 .footerContent .footerColumn:nth-child(2) ul {
   list-style: none;
 
-  li{
+  li {
     margin-bottom: 12px;
   }
 }
@@ -159,6 +159,8 @@
     flex-direction: column;
 
     text-align: center;
+
+    align-items: center;
 
     gap: 30px;
   }
